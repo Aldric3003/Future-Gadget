@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consoles - Future Gadget</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="category-page">
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="loading-text">LOADING CONSOLE DATABASE</div>
+    </div>
+
+    <div class="noise-overlay"></div>
+    
+    <header>
+        <div class="logo">
+            <span class="logo-text">FUTURE<span class="highlight">GADGET</span></span>
+            <div class="logo-glow"></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="phones.html">PHONES</a></li>
+                <li><a href="pcs.html">PCs</a></li>
+                <li><a href="toys.html">TOYS</a></li>
+                <li><a href="video-games.html">VIDEO GAMES</a></li>
+                <li><a href="consoles.html" class="active">CONSOLES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-hero">
+            <div class="category-hero-content">
+                <h1 class="glitch" data-text="NEXT-GEN CONSOLES">NEXT-GEN CONSOLES</h1>
+                <p class="subtitle">The ultimate gaming platforms</p>
+            </div>
+            <div id="category-canvas-container"></div>
+        </section>
+
+        <section class="filter-section">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label>SORT BY</label>
+                    <select class="futuristic-select">
+                        <option>NEWEST</option>
+                        <option>PRICE: LOW TO HIGH</option>
+                        <option>PRICE: HIGH TO LOW</option>
+                        <option>POPULARITY</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>FILTER</label>
+                    <div class="filter-buttons">
+                        <button class="filter-button active">ALL</button>
+                        <button class="filter-button">HOLOGRAPHIC</button>
+                        <button class="filter-button">NEURAL</button>
+                        <button class="filter-button">PORTABLE</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-grid">
+                <div class="product-card" data-category="consoles">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=300" alt="Quantum X Console">
+                        </div>
+                        <div class="holographic-effect"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Quantum X Console</h3>
+                        <p class="product-description">Next-gen console with quantum processing and holographic display</p>
+                        <div class="product-price">$1,999</div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="consoles">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=300" alt="NeoStation Portable">
+                        </div>
+                        <div class="holographic-effect"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NeoStation Portable</h3>
+                        <p class="product-description">Portable gaming console with neural interface</p>
+                        <div class="product-price">$1,499</div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="consoles">
+                    <div class="product-image-container">
+                        <div class="product-image">
+                            <img src="/placeholder.svg?height=300&width=300" alt="HoloArcade System">
+                        </div>
+                        <div class="holographic-effect"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>HoloArcade System</h3>
+                        <p class="product-description">Full-room holographic gaming system</p>
+                        <div class="product-price">$9,999</div>
+                        <button class="add-to-cart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-technology">
+            <h2 class="section-title">FEATURED <span class="highlight">TECHNOLOGY</span></h2>
+            <div class="tech-showcase">
+                <div class="tech-image">
+                    <img src="/placeholder.svg?height=500&width=500" alt="Holographic Gaming">
+                    <div class="tech-glow"></div>
+                </div>
+                <div class="tech-info">
+                    <h3>HOLOGRAPHIC GAMING</h3>
+                    <p>Experience gaming like never before with our holographic technology. Step into the game and interact with virtual worlds in stunning 3D.</p>
+                    <button class="learn-more">LEARN MORE</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FUTURE<span class="highlight">GADGET</span></h3>
+                <p>Bringing tomorrow's technology to today's world.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> 09032359849</p>
+                    <p><i class="fas fa-envelope"></i> aldric3003mercenary@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="phones.html">Phones</a></li>
+                    <li><a href="pcs.html">PCs</a></li>
+                    <li><a href="toys.html">Toys</a></li>
+                    <li><a href="video-games.html">Video Games</a></li>
+                    <li><a href="consoles.html">Consoles</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FUTURE GADGET. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    <script src="3d.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>
+

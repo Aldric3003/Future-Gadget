@@ -1,0 +1,459 @@
+/* Animations CSS */
+
+/* Glitch Effect */
+.glitch {
+    position: relative;
+    color: var(--text-color);
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+
+
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip: rect(44px, 450px, 56px, 0);
+  }
+  
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--primary-blue);
+    animation: glitch-anim-1 5s infinite linear alternate-reverse;
+  }
+  
+  .glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--neon-blue);
+    animation: glitch-anim-2 1s infinite linear alternate-reverse;
+
+
+  }
+  
+  @keyframes glitch-anim-1 {
+    0% {
+      clip: rect(66px, 9999px, 10px, 0);
+    }
+    5% {
+      clip: rect(36px, 9999px, 50px, 0);
+    }
+    10% {
+      clip: rect(80px, 9999px, 91px, 0);
+    }
+    15% {
+      clip: rect(25px, 9999px, 64px, 0);
+    }
+    20% {
+      clip: rect(39px, 9999px, 49px, 0);
+    }
+    25% {
+      clip: rect(89px, 9999px, 100px, 0);
+    }
+    30% {
+      clip: rect(32px, 9999px, 23px, 0);
+    }
+    35% {
+      clip: rect(67px, 9999px, 74px, 0);
+    }
+    40% {
+      clip: rect(10px, 9999px, 93px, 0);
+    }
+    45% {
+      clip: rect(31px, 9999px, 21px, 0);
+    }
+    50% {
+      clip: rect(88px, 9999px, 99px, 0);
+    }
+    55% {
+      clip: rect(19px, 9999px, 33px, 0);
+    }
+    60% {
+      clip: rect(79px, 9999px, 60px, 0);
+    }
+    65% {
+      clip: rect(24px, 9999px, 34px, 0);
+    }
+    70% {
+      clip: rect(96px, 9999px, 86px, 0);
+    }
+    75% {
+      clip: rect(40px, 9999px, 31px, 0);
+    }
+    80% {
+      clip: rect(62px, 9999px, 73px, 0);
+    }
+    85% {
+      clip: rect(15px, 9999px, 25px, 0);
+    }
+    90% {
+      clip: rect(78px, 9999px, 82px, 0);
+    }
+    95% {
+      clip: rect(50px, 9999px, 41px, 0);
+    }
+    100% {
+      clip: rect(12px, 9999px, 1px, 0);
+    }
+  }
+  
+  @keyframes glitch-anim-2 {
+    0% {
+      clip: rect(65px, 9999px, 11px, 0);
+    }
+    5% {
+      clip: rect(35px, 9999px, 51px, 0);
+    }
+    10% {
+      clip: rect(81px, 9999px, 92px, 0);
+    }
+    15% {
+      clip: rect(24px, 9999px, 63px, 0);
+    }
+    20% {
+      clip: rect(38px, 9999px, 48px, 0);
+    }
+    25% {
+      clip: rect(88px, 9999px, 101px, 0);
+    }
+    30% {
+      clip: rect(33px, 9999px, 22px, 0);
+    }
+    35% {
+      clip: rect(68px, 9999px, 75px, 0);
+    }
+    40% {
+      clip: rect(11px, 9999px, 92px, 0);
+    }
+    45% {
+      clip: rect(30px, 9999px, 20px, 0);
+    }
+    50% {
+      clip: rect(89px, 9999px, 98px, 0);
+    }
+    55% {
+      clip: rect(18px, 9999px, 32px, 0);
+    }
+    60% {
+      clip: rect(78px, 9999px, 61px, 0);
+    }
+    65% {
+      clip: rect(23px, 9999px, 35px, 0);
+    }
+    70% {
+      clip: rect(97px, 9999px, 87px, 0);
+    }
+    75% {
+      clip: rect(41px, 9999px, 30px, 0);
+    }
+    80% {
+      clip: rect(63px, 9999px, 72px, 0);
+    }
+    85% {
+      clip: rect(14px, 9999px, 26px, 0);
+    }
+    90% {
+      clip: rect(77px, 9999px, 83px, 0);
+    }
+    95% {
+      clip: rect(51px, 9999px, 40px, 0);
+    }
+    100% {
+      clip: rect(13px, 9999px, 2px, 0);
+    }
+  }
+  
+  @keyframes glitch-skew {
+    0% {
+      transform: skew(0deg);
+    }
+    10% {
+      transform: skew(0deg);
+    }
+    20% {
+      transform: skew(0deg);
+    }
+    30% {
+      transform: skew(0deg);
+    }
+    40% {
+      transform: skew(0deg);
+    }
+    50% {
+      transform: skew(-1deg);
+    }
+    60% {
+      transform: skew(0deg);
+    }
+    70% {
+      transform: skew(0deg);
+    }
+    80% {
+      transform: skew(1deg);
+    }
+    90% {
+      transform: skew(0deg);
+    }
+    100% {
+      transform: skew(0deg);
+    }
+  }
+  
+  /* Floating Animation */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Fade In Animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Glow Pulse Animation */
+  .glow-pulse {
+    animation: glow-pulse 2s infinite;
+
+
+  }
+  
+  @keyframes glow-pulse {
+    0% {
+      box-shadow: 0 0 5px var(--glow-color);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--glow-color), 0 0 30px var(--glow-color);
+    }
+    100% {
+      box-shadow: 0 0 5px var(--glow-color);
+    }
+  }
+  
+  /* Typing Animation */
+  .typing {
+    overflow: hidden;
+    border-right: 2px solid var(--neon-blue);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+
+
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: var(--neon-blue);
+    }
+  }
+  
+  /* Rotate Animation */
+  .rotate {
+    animation: rotate 10s linear infinite;
+
+
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Scale Animation */
+  .scale {
+    animation: scale 2s ease-in-out infinite;
+
+
+  }
+  
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Shimmer Animation */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shimmer::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    animation: shimmer 3s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%) rotate(30deg);
+    }
+    100% {
+      transform: translateX(100%) rotate(30deg);
+    }
+  }
+  
+  /* Neon Flicker Animation */
+  .neon-flicker {
+    animation: neon-flicker 2s infinite alternate;
+  }
+  
+  @keyframes neon-flicker {
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+      text-shadow:
+        0 0 5px var(--text-color), 0 0 10px var(--text-color), 0 0 15px var(--text-color), 0 0 20px var(--primary-blue), 0 0 35px var(
+          --primary-blue
+        ), 0 0 40px var(--primary-blue), 0 0 50px var(--primary-blue), 0 0 75px var(--primary-blue);
+    }
+    20%,
+    24%,
+    55% {
+      text-shadow: none;
+    }
+  }
+  
+  /* Bounce Animation */
+  .bounce {
+    animation: bounce 1s infinite;
+
+
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Slide In Animation */
+  .slide-in-left {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+  
+  .slide-in-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+  
+  .slide-in-left.animate,
+  .slide-in-right.animate {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  /* Fade In Up Animation */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  
+  .fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Stagger Animation */
+  .stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .stagger-item.animate {
+    animation: stagger-fade-in 0.5s ease forwards;
+  }
+  
+  .stagger-item:nth-child(2).animate {
+    animation-delay: 0.1s;
+  }
+  
+  .stagger-item:nth-child(3).animate {
+    animation-delay: 0.2s;
+  }
+  
+  .stagger-item:nth-child(4).animate {
+    animation-delay: 0.3s;
+  }
+  
+  .stagger-item:nth-child(5).animate {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes stagger-fade-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
